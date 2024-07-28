@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosMail } from "react-icons/io";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { motion } from "framer-motion";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -30,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-4" id="contact">
+    <div className="border-b border-neutral-900 pb-4 px-14" id="contact">
       <h2 className="text-4xl text-center my-12">Get in Touch</h2>
       <div className="flex flex-wrap">
         <motion.div
@@ -46,9 +47,15 @@ const Contact = () => {
             <IoIosMail className="text-2xl" />
             <a href="mailto:ashkankhan728@gmail.com">ashkankhan728@gmail.com</a>
           </div>
-          <div className="flex md:gap-5 gap-2">
+          <div className="flex md:gap-5 gap-2 mb-5">
             <BiSolidPhoneCall className="text-2xl" />
             <a href="tel:+917906649538">+917906649538</a>
+          </div>
+          <div className="flex md:gap-5 gap-2">
+            <FaLocationDot className="text-xl" />
+            <a href="tel:+917906649538">
+              Haldwani, Nainital, Uttarakhand - 263139
+            </a>
           </div>
         </motion.div>
         <motion.div

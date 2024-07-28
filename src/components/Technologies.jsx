@@ -24,7 +24,7 @@ const Technologies = () => {
     },
   });
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b border-neutral-800 pb-24 px-14" id="technologies">
       <h2 className="text-center text-4xl my-20">Technologies</h2>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
