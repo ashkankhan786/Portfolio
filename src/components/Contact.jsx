@@ -53,7 +53,7 @@ const Contact = () => {
           </div>
           <div className="flex md:gap-5 gap-2">
             <FaLocationDot className="text-xl" />
-            <a href="tel:+917906649538">
+            <a href="https://maps.app.goo.gl/22qk2jsXqTYBWtHH9">
               Haldwani, Nainital, Uttarakhand - 263139
             </a>
           </div>
