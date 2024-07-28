@@ -8,7 +8,7 @@ export const projects = [
     title: "Food Delivery App",
     image: P1,
     description:
-      "Tomato is a robust food delivery application built using the MERN stack, offering seamless online ordering with a comprehensive set of features tailored for both customers and administrators.",
+      "Hungry Hub is a robust food delivery application built using the MERN stack, offering seamless online ordering with a comprehensive set of features tailored for both customers and administrators.",
     features: [
       "Admin Panel: Efficient management interface for overseeing orders, customers, and menu items.",
       "Functional Cart: Smooth shopping cart experience allowing users to add, remove, and modify their orders.",
