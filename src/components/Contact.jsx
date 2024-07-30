@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosMail } from "react-icons/io";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -6,6 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
+  const [success, setSuccess] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -24,6 +25,8 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      setSuccess(true);
+      setTimeout(() => setSuccess(false), 3000);
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -95,6 +98,11 @@ const Contact = () => {
                   Submit
                 </button>
               </div>
+              {success && (
+                <div className="fixed top-16 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-md">
+                  Form submitted successfully!
+                </div>
+              )}
             </div>
           </form>
         </motion.div>
