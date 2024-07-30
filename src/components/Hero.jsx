@@ -67,7 +67,7 @@ const Hero = () => {
                     scale: 1.1,
                     transition: { duration: 0.25, delay: 0 },
                   }}
-                  href="https://www.linkedin.com/in/ashkan-khan-b79606216"
+                  href="https://www.linkedin.com/in/mohd-ashkan-khan-b79606216"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
