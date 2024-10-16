@@ -2,8 +2,34 @@ import P1 from "./HungryHub.png";
 import P2 from "./URL.png";
 import P3 from "./TODO.png";
 import P4 from "./AK.png";
+import P5 from "./Movie.png";
+import P6 from "./Tic-Tac.png";
 
 export const projects = [
+  {
+    title: "Movie Recommendation Web App",
+    image: P5,
+    description:
+      " Developed a web application that provides movie recommendations and includes a search feature allowing users to query a database of ~1 million movies. Users can search for specific movies by title or by providing a description, leveraging a machine learning KNN model to recommend movies without needing the exact title.",
+    features: [
+      "Users can search for specific movies by title or by providing a description, leveraging a machine learning KNN model to recommend movies without needing the exact title.",
+      "Built a fully responsive and visually appealing UI using React and Tailwind CSS.",
+    ],
+    tech: ["ReactJS", "Tailwind CSS", "Python", "Flask", "KNN Model"],
+    url: "https://www.github.com/ashkankhan786/Movies-Recommendation-App",
+  },
+  {
+    title: "Multiplayer Tic Tac Toe",
+    image: P6,
+    description:
+      "Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time.Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience.",
+    features: [
+      "• Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time",
+      "Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience",
+    ],
+    tech: ["ReactJS", "Tailwind CSS", "Socket.io", "ExpressJS", "NodeJS"],
+    url: "https://www.github.com/ashkankhan786/Tic-Tac-Toe",
+  },
   {
     title: "Food Delivery App",
     image: P1,
@@ -17,7 +43,7 @@ export const projects = [
       "Integrated Payment Gateway: Seamless payment processing to complete transactions securely online.",
     ],
     tech: ["ReactJS", "Express", "NodeJS", "MongoDB"],
-    url: "https://www.github.com/ashkankhan786/Tomato",
+    url: "https://www.github.com/ashkankhan786/Hungry-Hub",
   },
   {
     title: "URL Shortener",
