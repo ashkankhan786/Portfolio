@@ -13,7 +13,7 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Full Stack Developer",
-      "CS Student",
+      "Competitive Programmer",
       "MERN Stack Developer",
       "Professional Coder",
     ],
@@ -138,7 +138,7 @@ const Hero = () => {
                   scale: 1.1,
                   transition: { duration: 0.1, delay: 0 },
                 }}
-                href="/Ashkan_Resume.pdf"
+                href="/Mohd_Ashkan_Khan_Resume.pdf"
                 download
               >
                 <button className="bg-slate-950 border-neutral-500 border-2 py-1 px-2 rounded">
