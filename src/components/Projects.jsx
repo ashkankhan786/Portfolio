@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "../assets/projects/projects";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -21,16 +22,6 @@ const Projects = () => {
                 width={300}
                 className="rounded "
               />
-              <div className="bg-gray-400 rounded absolute z-50 top-0 left-0 w-[300px] h-full opacity-0 flex items-center justify-center transition duration-300 hover:opacity-70">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white px-4 py-2 bg-gray-900 border border-gray-800 rounded-md hover:bg-gray-950 transition duration-300"
-                >
-                  Source Code
-                </a>
-              </div>
             </motion.div>
             <motion.div
               initial={{ x: 100, opacity: 0 }}
@@ -38,7 +29,25 @@ const Projects = () => {
               transition={{ duration: 1.5 }}
               className="w-full md:w-3/4 max-w-xl"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <h6 className="mb-2 font-semibold flex items-center gap-3">
+                {project.title}
+                <span>
+                  <a
+                    href={`${
+                      project.demo.trim().length === 0 ? "#" : project.demo
+                    }`}
+                    target="_blank"
+                  >
+                    <FaExternalLinkAlt className="text-gray-400" size={13} />
+                  </a>
+                </span>
+                <span className="italic font-light px-4">
+                  <a href={project.url} target="blank">
+                    {" "}
+                    Github
+                  </a>
+                </span>
+              </h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.tech.map((tech, index) => (
                 <span

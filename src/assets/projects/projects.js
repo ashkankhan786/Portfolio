@@ -4,8 +4,31 @@ import P3 from "./TODO.png";
 import P4 from "./AK.png";
 import P5 from "./Movie.png";
 import P6 from "./Tic-Tac.png";
-
+import P7 from "./Docuflow-1.png";
+import P8 from "./Docuflow-2.png";
+import P9 from "./Savi.png";
 export const projects = [
+  {
+    title: "DocuFlow",
+    image: P7,
+    description:
+      "DocuFlow is a web application designed to streamline document management and workflow processes. It allows users to upload, organize, and share documents efficiently.",
+    features: [
+      "Developed a full-stack document collaboration platform inspired by Eraser.io, allowing users to write, draw, and manage documents in a structured workspace.",
+      "Implemented rich-text editing with Editor.js and collaborative whiteboard drawings using Tldraw, with a responsive UI using ShadCN and TailwindCSS with support for light/dark mode.",
+      "Integrated Kinde authentication for secure user login and role-based access to team workspaces, and ConvexDB for serverless real-time querying and CRUD operations for documents and team management.",
+    ],
+    tech: [
+      "Next.js",
+      "ConvexDB",
+      "TailwindCSS",
+      "ShadCN",
+      "Tldraw",
+      "Editor.js",
+    ],
+    url: "https://www.github.com/ashkankhan786/DocuFlow",
+    demo: "https://docu-flow.vercel.app",
+  },
   {
     title: "Movie Recommendation Web App",
     image: P5,
@@ -17,18 +40,7 @@ export const projects = [
     ],
     tech: ["ReactJS", "Tailwind CSS", "Python", "Flask", "KNN Model"],
     url: "https://www.github.com/ashkankhan786/Movies-Recommendation-App",
-  },
-  {
-    title: "Multiplayer Tic Tac Toe",
-    image: P6,
-    description:
-      "Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time.Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience.",
-    features: [
-      "• Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time",
-      "Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience",
-    ],
-    tech: ["ReactJS", "Tailwind CSS", "Socket.io", "ExpressJS", "NodeJS"],
-    url: "https://www.github.com/ashkankhan786/Tic-Tac-Toe",
+    demo: "",
   },
   {
     title: "Food Delivery App",
@@ -44,32 +56,34 @@ export const projects = [
     ],
     tech: ["ReactJS", "Express", "NodeJS", "MongoDB"],
     url: "https://www.github.com/ashkankhan786/Hungry-Hub",
+    demo: "",
   },
   {
-    title: "URL Shortener",
-    image: P2,
+    title: "SAVI - A Dance Club Website",
+    image: P9,
     description:
-      "The URL Shortener project represents a robust web application developed using Node.js and Express.js for server-side rendering with EJS templates. This innovative tool enables users to efficiently convert lengthy URLs into concise, shareable short IDs.",
+      "SAVI is a dance club website that showcases the club's events, classes, and instructors. It features a modern design and user-friendly navigation.",
     features: [
-      "Efficient URL Shortening: Transforms complex URLs into succinct short IDs for streamlined sharing and management.",
-      "Secure MongoDB Integration: Safely stores original URLs and their corresponding short IDs, ensuring data integrity and security.",
-      "Comprehensive Analytics: Provides detailed analytics on URL usage, including the number of clicks per short ID, facilitating informed decision-making.",
-      "Robust Authentication: Implements robust authentication mechanisms to safeguard user data and manage access control effectively.",
+      "Responsive Design: Ensures a seamless experience across all devices.",
+      "Interactive Elements: Includes interactive event calendars and class schedules.",
+      "Animations: Features extensive animations to enhance user engagement and provide a dynamic browsing experience.",
     ],
-    tech: ["NodeJS", "Express", "MongoDB", "EJS"],
-    url: "https://www.github.com/ashkankhan786/URL-Shortener",
+    tech: ["ReactJS", "TailwindCSS", "Framer Motion"],
+    url: "https://www.github.com/ashkankhan786/Dance-Club",
+    demo: "https://dance-club.onrender.com",
   },
   {
-    title: "Todo App",
-    image: P3,
+    title: "Multiplayer Tic Tac Toe",
+    image: P6,
     description:
-      "The Todo app is a frontend application built with React, leveraging Context API for efficient state management. This lightweight task management tool allows users to add, edit, and delete tasks dynamically within a single-page interface.",
+      "Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time.Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience.",
     features: [
-      "Task Management: Create, edit, and delete tasks seamlessly.",
-      "Context API: Utilizes React's Context API for state management.",
+      "• Developed a fully functional multiplayer Tic-Tac-Toe game allowing players to compete in real time",
+      "Implemented game logic, player turns, and win/loss conditions with a user-friendly and responsive interface for a smooth experience",
     ],
-    tech: ["HTML", "CSS", "Javascript", "ReactJS"],
-    url: "https://www.github.com/ashkankhan786/ToDo-App",
+    tech: ["ReactJS", "Tailwind CSS", "Socket.io", "ExpressJS", "NodeJS"],
+    url: "https://www.github.com/ashkankhan786/Tic-Tac-Toe",
+    demo: "",
   },
   {
     title: "Portfolio Website",
@@ -83,5 +97,6 @@ export const projects = [
     ],
     tech: ["ReactJS", "TailwindCSS", "Framer Motion"],
     url: "https://www.github.com/ashkankhan786/Portfolio",
+    demo: "https://ashkan-portfolio.vercel.app/",
   },
 ];

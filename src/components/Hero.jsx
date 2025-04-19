@@ -28,7 +28,7 @@ const Hero = () => {
     visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
   });
   return (
-    <div className="border-b pb-4 border-neutral-900 lg:mb-35 h-auto px-14">
+    <div className="mt-12 md:mt-16 border-b pb-4 border-neutral-900 lg:mb-35 h-auto px-14">
       <div className="flex flex-wrap md:flex-row flex-col-reverse">
         <div className="w-full md:w-1/2 md:pl-12">
           <div className="flex flex-col md:items-start">
