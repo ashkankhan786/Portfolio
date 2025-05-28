@@ -7,7 +7,45 @@ import P6 from "./Tic-Tac.png";
 import P7 from "./Docuflow-1.png";
 import P8 from "./Docuflow-2.png";
 import P9 from "./Savi.png";
+import P10 from "./SpeakUp.png";
+import P11 from "./NeuroChest.png";
 export const projects = [
+  {
+    title: "NeuroChest",
+    image: P11,
+    description:
+      "NeuroChest is an ensemble model combining four deep learning architectures—VGG16, VGG19, ResNet50, and DenseNet121—trained on a dataset of over 200,000 chest X-ray images. It is designed to detect 14 different diseases, including Pneumothorax, Cardiomegaly, Pneumonia, and others. The model achieves an average binary accuracy of 87.41%, with the highest reaching 98.6% and the lowest at 67.8% on the test set.",
+    features: [
+      "Developed an ensemble model of 4 different deep learning models (VGG16, VGG19, ResNet50 and DenseNet121) trained on a dataset of 2,00,000+ chest X-ray images.",
+      "Designed to detect 14 different diseases including Pneumothorax, Cardiomegaly, Pneumonia, and more.",
+      "Achieved an average binary accuracy of 87.41% and average AUC score of 0.7855 on the test set.",
+    ],
+    tech: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "ReactJS",
+    ],
+    url: "https://www.github.com/ashkankhan786/NeuroChest",
+    demo: "",
+  },
+  {
+    title: "SpeakUp",
+    image: P10,
+    description:
+      "SpeakUp is a web application designed to facilitate anonymous feedback, report unwanted incidents and give suggestions within organizations. It allows users to submit their reports or thoughts without revealing their identity, promoting open communication.",
+    features: [
+      "Developed a full-stack web application for anonymous feedback and reporting, allowing users to submit reports without revealing their identity.",
+      "Implemented a user-friendly interface with Next.js and TailwindCSS, ensuring a responsive design that works seamlessly across devices.",
+      "Integrated Next-Auth authentication for secure user login and role-based access control, and ConvexDB for serverless real-time querying and CRUD operations for reports and user management.",
+    ],
+    tech: ["Next.js", "ConvexDB", "TailwindCSS", "ShadCN", "Next-Auth"],
+    url: "https://www.github.com/ashkankhan786/SpeakUp",
+    demo: "https://speak-up-one.vercel.app/",
+  },
   {
     title: "DocuFlow",
     image: P7,
