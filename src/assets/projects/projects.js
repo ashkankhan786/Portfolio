@@ -14,7 +14,7 @@ export const projects = [
     title: "NeuroChest",
     image: P11,
     description:
-      "NeuroChest is an ensemble model combining four deep learning architectures—VGG16, VGG19, ResNet50, and DenseNet121—trained on a dataset of over 200,000 chest X-ray images. It is designed to detect 14 different diseases, including Pneumothorax, Cardiomegaly, Pneumonia, and others. The model achieves an average binary accuracy of 87.41%, with the highest reaching 98.6% and the lowest at 67.8% on the test set.",
+      "NeuroChest is an ensemble model combining four deep learning architectures—VGG16, VGG19, ResNet50, and DenseNet121—trained on a dataset of over 200,000 chest X-ray images. It is designed to detect 14 different diseases, including Pneumothorax, Cardiomegaly, Pneumonia, and others. The model achieves up to 98.6% accuracy and 95%+ on multiple critical pathologies",
     features: [
       "Developed an ensemble model of 4 different deep learning models (VGG16, VGG19, ResNet50 and DenseNet121) trained on a dataset of 2,00,000+ chest X-ray images.",
       "Designed to detect 14 different diseases including Pneumothorax, Cardiomegaly, Pneumonia, and more.",
